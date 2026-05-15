@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f3f3f3;
+    padding:40px;
+    font-family:Arial, sans-serif;
+}
+
+.main{
+    max-width:1000px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.layout{
+    height:220px;
+    border:2px solid #999;
+    background:white;
+    padding:12px;
+
+    display:grid;
+    gap:10px;
+}
+
+.dark{
+    background:#e5e762;
+}
+
+.light{
+    background:#5f676e;
+}
+
+.empty{
+    background:white;
+}
+
+/* ================= Layout 1 ================= */
+
+.layout1{
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+}
+
+/* ================= Layout 2 ================= */
+
+.layout2{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:3fr 1fr;
+}
+
+.layout2 .big{
+    grid-column:1/3;
+}
+
+/* ================= Layout 3 ================= */
+
+.layout3{
+    grid-template-columns:2fr 1fr;
+    grid-template-rows:1fr 2fr;
+}
+
+/* ================= Layout 4 ================= */
+
+.layout4{
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:1fr 2fr;
+}
+
+.layout4 .header{
+    grid-column:1/4;
+}
+
+/* ================= Layout 5 ================= */
+
+.layout5{
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr);
+}
+
+/* ================= Layout 6 ================= */
+
+.layout6{
+    grid-template-columns:2fr 1fr;
+    grid-template-rows:2fr 1fr;
+}
+
+.layout6 .big{
+    grid-row:1/3;
+}
+
+/* ================= Layout 7 ================= */
+
+.layout7{
+    grid-template-columns:2fr 1fr;
+    grid-template-rows:1fr 2fr;
+}
+
+/* ================= Layout 8 ================= */
+
+.layout8{
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:2fr 1fr;
+}
+
+.layout8 .bottom{
+    grid-column:1/3;
+}
+
+/* ================= Layout 9 ================= */
+
+.layout9{
+    grid-template-columns:2fr 1fr;
+    grid-template-rows:2fr 1fr;
+}
+
+.layout9 .side{
+    grid-row:1/3;
+}
+
