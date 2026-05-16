@@ -123,4 +123,21 @@ body{
 .layout9 .side{
     grid-row:1/3;
 }
+/* ============ Responsive ============ */
+
+@media(max-width:900px){
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+}
 
